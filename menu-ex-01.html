@@ -11,29 +11,82 @@
             box-sizing: border-box;
         }
 
-
         .box{
+            /* border: 1px solid black; */
             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            font-size: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: yellow;
+            box-shadow: 10px 10px 30px;
         }
 
-        li{
-            display: inline;
-            text-decoration: none;
+        .img{
+            /* border: 1px solid black; */
+            flex: 1;
+            color: red;
+
+            p{  border: 1px solid black;
+
+                width: 70px;
+                height: 70px;
+                text-align: center;
+                align-content: center;
+                background-color: white;
+            }
         }
+
+        .menu{
+            /* border: 1px solid black; */
+            display: flex;
+            flex: 2;
+            gap: 20px;
+            justify-content: space-between;
+
+            a{  
+                /* border: 1px solid black; */
+
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        .botao{
+            /* border: 1px solid black; */
+            flex: 1;
+            text-align: right;
+            
+            button{
+                width: 80px;
+                height: 30px;
+                background-color: greenyellow;
+                border-radius: 5px;
+            }
+        }
+
+        p:hover, a:hover, button:hover{
+            color: green;
+            transform: scale(1.1);
+        }
+
+        
 
 
     </style>
 </head>
 <body>
     <div class="box">
-        <div class="img">Marca</div>
+        <div class="img"><p>Marca</p></div>
         <div class="menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Serviço</a></li>
-            <li><a href="#">Contato</a></li>
+            <a href="#">Inicio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviço</a>
+            <a href="#">Contato</a>
         </div>
-        <div class="botao">Login</div>
+        <div class="botao"><button>Login</button></div>
     </div>
 </body>
 </html>
